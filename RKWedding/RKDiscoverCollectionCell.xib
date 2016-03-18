@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RKDiscoverCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_dis_ser_car@2x" translatesAutoresizingMaskIntoConstraints="NO" id="0oM-0g-uZZ">
+                        <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="五星级酒店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3Z-Dm-4mK">
+                        <rect key="frame" x="15" y="13" width="70" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="NXe-u4-ULU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2290" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jh9-hC-JFQ">
+                        <rect key="frame" x="51" y="116" width="42" height="18"/>
+                        <color key="backgroundColor" red="0.35308493589743584" green="0.35308493589743584" blue="0.35308493589743584" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="RJb-Ky-tBt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="0oM-0g-uZZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0mZ-eR-eXY"/>
+                <constraint firstItem="Z3Z-Dm-4mK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="13" id="6BH-ce-SWV"/>
+                <constraint firstAttribute="trailing" secondItem="0oM-0g-uZZ" secondAttribute="trailing" id="Htx-hA-cco"/>
+                <constraint firstAttribute="bottom" secondItem="0oM-0g-uZZ" secondAttribute="bottom" id="JeO-iC-C2n"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Z3Z-Dm-4mK" secondAttribute="trailing" id="RJN-lQ-igi"/>
+                <constraint firstItem="Jh9-hC-JFQ" firstAttribute="centerX" secondItem="0oM-0g-uZZ" secondAttribute="centerX" id="SG3-AB-6Ki"/>
+                <constraint firstItem="0oM-0g-uZZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Z77-A6-grJ"/>
+                <constraint firstAttribute="bottom" secondItem="Jh9-hC-JFQ" secondAttribute="bottom" constant="11" id="evZ-v9-KuR"/>
+                <constraint firstItem="Z3Z-Dm-4mK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="ke6-Ge-Y9c"/>
+            </constraints>
+            <size key="customSize" width="145" height="142"/>
+            <connections>
+                <outlet property="headImageView" destination="0oM-0g-uZZ" id="1W1-gV-Yx5"/>
+                <outlet property="numLabel" destination="Jh9-hC-JFQ" id="3l4-67-EUI"/>
+                <outlet property="titleLabel" destination="Z3Z-Dm-4mK" id="ow8-bu-cRv"/>
+            </connections>
+            <point key="canvasLocation" x="247.5" y="158.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="btn_dis_ser_car@2x" width="100" height="100"/>
+    </resources>
+</document>

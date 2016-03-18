@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RKWddingSubDetailTopCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="310"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="310"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ANI-Ef-KDO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="182"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="182" id="8Lz-R7-rdx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRV-vs-pgR">
+                        <rect key="frame" x="8" y="190" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="DRV-vs-pgR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="2qH-Tm-aav"/>
+                <constraint firstAttribute="trailing" secondItem="ANI-Ef-KDO" secondAttribute="trailing" id="3tP-hn-bmQ"/>
+                <constraint firstItem="ANI-Ef-KDO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8UT-Tf-oYL"/>
+                <constraint firstItem="ANI-Ef-KDO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="98S-jg-5oq"/>
+                <constraint firstAttribute="trailing" secondItem="DRV-vs-pgR" secondAttribute="trailing" constant="8" id="ELd-79-SPU"/>
+                <constraint firstAttribute="bottom" secondItem="DRV-vs-pgR" secondAttribute="bottom" constant="8" id="cWd-aQ-JPm"/>
+                <constraint firstItem="DRV-vs-pgR" firstAttribute="top" secondItem="ANI-Ef-KDO" secondAttribute="bottom" constant="8" id="gNN-p1-NKE"/>
+            </constraints>
+            <connections>
+                <outlet property="descriptionLabel" destination="DRV-vs-pgR" id="QLn-wR-iMz"/>
+                <outlet property="topimageView" destination="ANI-Ef-KDO" id="eA0-F7-9ZL"/>
+            </connections>
+            <point key="canvasLocation" x="197" y="87"/>
+        </collectionViewCell>
+    </objects>
+</document>

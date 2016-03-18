@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RKVideoDeatailCell">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rgq-dH-uh7">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="186"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zy9-EC-SaK">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="186"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9En-Zd-VUG">
+                                <rect key="frame" x="130" y="73" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="a8A-xJ-6Rc"/>
+                                    <constraint firstAttribute="width" constant="40" id="dmL-EG-Hdi"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="720palyinimg.png"/>
+                                <connections>
+                                    <action selector="playBtnDidClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Xl4-QO-MUI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="186" id="AvQ-BA-qKy"/>
+                            <constraint firstAttribute="trailing" secondItem="Zy9-EC-SaK" secondAttribute="trailing" id="Dog-tV-Fym"/>
+                            <constraint firstAttribute="bottom" secondItem="Zy9-EC-SaK" secondAttribute="bottom" id="HaW-Rs-Mae"/>
+                            <constraint firstItem="Zy9-EC-SaK" firstAttribute="leading" secondItem="Rgq-dH-uh7" secondAttribute="leading" id="ViX-uM-vxf"/>
+                            <constraint firstItem="Zy9-EC-SaK" firstAttribute="top" secondItem="Rgq-dH-uh7" secondAttribute="top" id="kOi-pl-bgk"/>
+                            <constraint firstItem="9En-Zd-VUG" firstAttribute="centerY" secondItem="Rgq-dH-uh7" secondAttribute="centerY" id="qb5-A8-QDK"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f9u-Os-FzB">
+                        <rect key="frame" x="0.0" y="346" width="300" height="54"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_be_shadowlight.png" translatesAutoresizingMaskIntoConstraints="NO" id="WhZ-IJ-61L">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="54"/>
+                                <rect key="contentStretch" x="0.14999999999999999" y="0.14999999999999999" width="0.14999999999999999" height="0.14999999999999999"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDA-oV-TFy">
+                                <rect key="frame" x="14" y="16" width="47" height="22"/>
+                                <color key="backgroundColor" red="0.85010016025641022" green="0.85010016025641022" blue="0.85010016025641022" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="7vA-PU-5Ig"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="imageEdgeInsets" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="  歪猫" image="img_schedule_2.png">
+                                    <color key="titleColor" red="0.94901960780000005" green="0.18823529410000001" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kDA-oV-TFy" firstAttribute="centerY" secondItem="f9u-Os-FzB" secondAttribute="centerY" id="43F-xE-LSf"/>
+                            <constraint firstAttribute="bottom" secondItem="WhZ-IJ-61L" secondAttribute="bottom" id="LU8-aa-Vpm"/>
+                            <constraint firstAttribute="trailing" secondItem="WhZ-IJ-61L" secondAttribute="trailing" id="S7l-Ud-bM9"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kDA-oV-TFy" secondAttribute="trailing" id="Y5h-xH-9EH"/>
+                            <constraint firstItem="kDA-oV-TFy" firstAttribute="leading" secondItem="f9u-Os-FzB" secondAttribute="leading" constant="14" id="ahz-vj-Owo"/>
+                            <constraint firstAttribute="height" constant="54" id="ndS-rk-1Ij"/>
+                            <constraint firstItem="WhZ-IJ-61L" firstAttribute="top" secondItem="f9u-Os-FzB" secondAttribute="top" id="rhw-vs-Htb"/>
+                            <constraint firstItem="WhZ-IJ-61L" firstAttribute="leading" secondItem="f9u-Os-FzB" secondAttribute="leading" id="sWn-wx-jcj"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYu-QD-fEM">
+                        <rect key="frame" x="8" y="189" width="284" height="157"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="9En-Zd-VUG" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="9Aa-8E-Erg"/>
+                <constraint firstItem="Rgq-dH-uh7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Alu-OO-9sk"/>
+                <constraint firstAttribute="trailing" secondItem="f9u-Os-FzB" secondAttribute="trailing" id="Df2-VJ-VAT"/>
+                <constraint firstAttribute="trailing" secondItem="zYu-QD-fEM" secondAttribute="trailing" constant="8" id="Tvv-ri-NYz"/>
+                <constraint firstItem="zYu-QD-fEM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="gC6-Eq-liM"/>
+                <constraint firstAttribute="bottom" secondItem="f9u-Os-FzB" secondAttribute="bottom" id="gMj-tH-elV"/>
+                <constraint firstItem="zYu-QD-fEM" firstAttribute="top" secondItem="Rgq-dH-uh7" secondAttribute="bottom" constant="3" id="sn9-f4-d7k"/>
+                <constraint firstItem="f9u-Os-FzB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vJQ-tA-gXW"/>
+                <constraint firstAttribute="trailing" secondItem="Rgq-dH-uh7" secondAttribute="trailing" id="wXZ-cb-2YQ"/>
+                <constraint firstItem="Rgq-dH-uh7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="whH-pN-Ru4"/>
+            </constraints>
+            <connections>
+                <outlet property="descroptionLabel" destination="zYu-QD-fEM" id="fKR-QO-4mr"/>
+                <outlet property="headImageHeight" destination="AvQ-BA-qKy" id="U6T-oQ-ALl"/>
+                <outlet property="headImageView" destination="Zy9-EC-SaK" id="sa4-MC-iaa"/>
+                <outlet property="nameBtn" destination="kDA-oV-TFy" id="UEU-Vv-c6z"/>
+                <outlet property="playBtn" destination="9En-Zd-VUG" id="jcK-h2-me2"/>
+            </connections>
+            <point key="canvasLocation" x="-157" y="42"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="720palyinimg.png" width="100" height="100"/>
+        <image name="img_be_shadowlight.png" width="600" height="15"/>
+        <image name="img_schedule_2.png" width="16" height="21"/>
+    </resources>
+</document>
